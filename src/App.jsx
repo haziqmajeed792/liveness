@@ -3,7 +3,7 @@ import SelphiComponent from './components/SelphiComponent'
 import SelphIDComponent from './components/SelphIDComponent'
 
 function App() {
-  const [widget, setWidget] = useState('selphi');
+  const [widget, setWidget] = useState('selphid');
   const licenseKey = import.meta.env.VITE_LICENSE_KEY;
 //   console.log(licenseKey);
 

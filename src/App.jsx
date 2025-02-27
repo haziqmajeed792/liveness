@@ -4,7 +4,7 @@ import SelphIDComponent from './components/SelphIDComponent'
 
 function App() {
   const [widget, setWidget] = useState('selphi');
-  const licenseKey = "l7mRL0Xz4K69KDVv1TnawuNbt4wjDMwSH0Vray7I";
+  const licenseKey = "XNIRnYXNb0zGPiIOI8X6alM7v8bZ7NnqAZ2YxEt6";
 
   function handleEmitOperationId(event) {
 	const result = event.detail;

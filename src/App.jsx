@@ -4,7 +4,9 @@ import SelphIDComponent from './components/SelphIDComponent'
 
 function App() {
   const [widget, setWidget] = useState('selphi');
-  const licenseKey = "XNIRnYXNb0zGPiIOI8X6alM7v8bZ7NnqAZ2YxEt6";
+  const licenseKey = import.meta.env.VITE_LICENSE_KEY;
+//   console.log(licenseKey);
+
 
   function handleEmitOperationId(event) {
 	const result = event.detail;

@@ -1,0 +1,61 @@
+/* template.css */
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: white;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: left;
+  }
+  
+  .container{
+    background-color: #f4f4f4;
+  }
+
+  .header-content {
+    /* max-width: 800px;
+    margin: 0 auto; */
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #19b394;
+  }
+  
+  .header p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #909090;
+  }
+  
+  /* Main Content Styles */
+  .main {
+    flex: 1;
+    padding: 1.5rem;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: #93c5fd;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }

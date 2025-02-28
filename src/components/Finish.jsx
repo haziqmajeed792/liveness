@@ -1,18 +1,20 @@
 import React, { useEffect } from "react";
-import "../Style/style.css"; // Import the CSS file
+import "../Style/style.css";
 
 export default function Finish({ setWidget }) {
   const redirectUrl = import.meta.env.VITE_WHATSAPP_REDIRECT
-
+  const resdirectTime = import.meta.env.VITE_WHATSAPP_REDIRECT_TIME;
   useEffect(() => {
     if (redirectUrl) {
       const timer = setTimeout(() => {
         window.location.href = redirectUrl;
-      }, 3000); // Redirect after 3 seconds
+      }, resdirectTime);
 
       return () => clearTimeout(timer);
     }
   }, [redirectUrl]);
+
+
 
 
   return (

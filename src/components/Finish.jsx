@@ -5,11 +5,14 @@ export default function Finish({ setWidget }) {
   const redirectUrl = import.meta.env.VITE_WHATSAPP_REDIRECT
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      window.location.href = redirectUrl;
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, []);
+    if (redirectUrl) {
+      const timer = setTimeout(() => {
+        window.location.href = redirectUrl;
+      }, 3000); // Redirect after 3 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, [redirectUrl]);
 
 
   return (

@@ -20,6 +20,7 @@ export default function SelphiComponent({ setWidget }) {
 			initialTipWidth={200}
 			language="en"
 			stabilizationStage={true}
+			cameraSelection={true}
 			previewCapture={true}
 			onextractionFinish={handleExtractionFinish}
 		/>

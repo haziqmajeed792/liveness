@@ -7,7 +7,7 @@ import Finish from './components/Finish';
 import Template from './Template/Template';
 
 function App() {
-  const [widget, setWidget] = useState('retry');
+  const [widget, setWidget] = useState('selphi');
   const licenseKey = import.meta.env.VITE_LICENSE_KEY;
 //   console.log(licenseKey);
 

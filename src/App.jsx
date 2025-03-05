@@ -8,6 +8,10 @@ import Template from './Template/Template';
 
 function App() {
   const [widget, setWidget] = useState('selphi');
+  const [faceImage, setFaceImage] = useState();
+  const [livenessImage, setLivenessImage] = useState();
+  const [mrz, setMrz] = useState();
+  const [ocr, setOcr] = useState();
   const licenseKey = import.meta.env.VITE_LICENSE_KEY;
 //   console.log(licenseKey);
 
@@ -33,11 +37,11 @@ function App() {
 				onemitOperationId={handleEmitOperationId}
 			>
 				
-				{widget === 'selphi' && <SelphiComponent setWidget={setWidget} />}
-				{widget === 'selphid' && <SelphIDComponent setWidget={setWidget} />}
+				{widget === 'selphi' && <SelphiComponent setLivenessImage={setLivenessImage} setWidget={setWidget} />}
+				{widget === 'selphid' && <SelphIDComponent setMrz={setMrz} setOcr={setOcr} setFaceImage={setFaceImage} setWidget={setWidget} />}
 				{widget === 'videoRecruitment' && <VideoRecruitmentComponent setWidget={setWidget} />}
 				{widget === 'retry' && <Retry setWidget={setWidget} />}	
-				{widget === 'finish' && <Finish setWidget={setWidget}/>}	
+				{widget === 'finish' && <Finish mrz={mrz} ocr={ocr} livenessImage={livenessImage} faceImage={faceImage} setWidget={setWidget}/>}	
 				</facephi-sdk-provider> 
 			</section>
 			</Template>
